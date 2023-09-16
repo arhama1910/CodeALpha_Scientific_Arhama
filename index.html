@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<form name="calcul">
+<table align="center">
+
+	<tr>
+		<td colspan="4"> <input type="text" name="result" placeholder="0" style="text-align:right"> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="sin" onclick="sin()"> sin </button> </td>
+		<td><button type="button" value="cos" onclick="cos()"> cos</button> </td>
+		<td><button type="button" value="tan" onclick="tan()"> tan </button> </td>
+        
+		<td colspan="2">
+		 <button type="button" value="C" class="clear" onclick="remv()"> C </button>
+	 </td>
+	</tr>
+    <tr>
+        <td><button type="button" value="log" onclick="log()">log</button></td>
+        <td><button type="button" value="exp" onclick="exp()">exp</button></td>
+        <td><button type="button" value="abs" onclick="abs()">abs</button></td>
+        <td><button type="button" value="floor" onclick="floor()">floor</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="ceil" onclick="ceil()">ceil</button></td>
+        <td><button type="button" value="round" onclick="round()">round</button></td>
+        <td><button type="button" value="min" onclick="min()">min</button></td>
+        <td><button type="button" value="max" onclick="max()">max</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="PI" onclick="number(Math.PI)">π</button></td>
+        <td><button type="button" value="e" onclick="number(Math.E)">e</button></td>
+        <td><button type="button" value="log10" onclick="log10()">log10</button></td>
+        <td><button type="button" value="sqrt" onclick="sqrt()">√</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" value="asin" onclick="asin()">asin</button></td>
+        <td><button type="button" value="acos" onclick="acos()">acos</button></td>
+        <td><button type="button" value="atan" onclick="atan()">atan</button></td>
+        <td><button type="button" value="rand" onclick="rand()">rand</button></td>
+    </tr>
+    
+
+	<tr>
+		<td><button type="button" value="x^2" onclick="square()"> x<sup>2 </button> </td>
+		<td><button type="button" value="x^3" onclick="cubed()"> x<sup>3 </button> </td>
+		<td><button type="button" value="sqrt2" onclick="sqrt2()"> &radic; </button> </td>
+		<td><button type="button" value="sqrt3" onclick="sqrt3()"> &#8731; </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="1" onclick="number(value)"> 1 </button> </td>
+		<td><button type="button" value="2" onclick="number(value)"> 2 </button> </td>
+		<td><button type="button" value="3" onclick="number(value)"> 3 </button> </td>
+		<td><button type="button" value="BACKSPC" onclick="BACKSPC()"> < </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="4" onclick="number(value)"> 4</button> </td>
+		<td><button type="button" value="5" onclick="number(value)"> 5 </button> </td>
+		<td><button type="button" value="6" onclick="number(value)"> 6 </button> </td>
+		<td><button type="button" value="-" onclick="number(value)"> - </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="7" onclick="number(value)"> 7 </button> </td>
+		<td><button type="button" value="8" onclick="number(value)"> 8 </button> </td>
+		<td><button type="button" value="9" onclick="number(value)"> 9 </button> </td>
+		<td><button type="button" value="/" onclick="number(value)"> / </button> </td>
+	</tr>
+
+	<tr>
+		<td><button type="button" value="." onclick="number(value)"> . </button> </td>
+		<td><button type="button" value="0" onclick="number(value)"> 0 </button> </td>
+		<td><button type="button" value="*" onclick="number(value)"> * </button> </td>
+		<td><button type="button" value="%" onclick="number(value)"> % </button> </td>
+	</tr>
+
+	<tr>
+		<td colspan="2"> <button type="button" value="=" onclick="equal()" class="equal">=</button> </td>
+		<td><button type="button" value="+" onclick="number(value)"> + </button> </td>
+	</tr>
+
+</table>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
